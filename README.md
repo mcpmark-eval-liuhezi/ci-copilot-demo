@@ -13,3 +13,9 @@ A throwaway project for a live demo of **GitHub Actions + Copilot** at Thursday'
 1. Show the seed commit and the workflow file.
 2. Watch the push-triggered workflow run finish and download the `build-log` artifact.
 3. Walk through the open pull request and the requested Copilot review.
+
+## Runbook
+
+- **Re-run the workflow:** open the *Actions* tab, select the **CI build** workflow, pick the run you want, and use the **Re-run all jobs** button (or *Re-run failed jobs*). You can also re-run from a commit's checks view or the PR's *Checks* tab.
+- **Where the build-log artifact shows up:** on a completed workflow run, open the run's summary page — the **Artifacts** section at the bottom lists `build-log`, downloadable as a ZIP containing `build.log`.
+- **Ask Copilot to review a pull request:** on the PR page, use the **Reviewers** panel on the right and click the Copilot icon / select **Copilot** to request a review; Copilot then reads the diff and leaves feedback. (You can also mention @copilot in a comment on newer setups.)
