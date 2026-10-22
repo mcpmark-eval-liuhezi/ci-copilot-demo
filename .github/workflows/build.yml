@@ -1,0 +1,18 @@
+name: CI build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Write build log
+        run: |
+          echo "demo build ok" > build.log
+          cat build.log
+
+      - name: Upload build log artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build.log
